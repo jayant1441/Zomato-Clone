@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:id="@+id/nav_delivery"
+    android:title="Delivery"
+    android:icon="@drawable/nav_delivery_icon"/>
+
+    <item android:id="@+id/nav_favourite"
+        android:title="Favourites"
+        android:icon="@drawable/nav_favourite_icon"/>
+
+    <item android:id="@+id/nav_history"
+        android:title="History"
+        android:icon="@drawable/nav_history_icon"/>
+
+    <item android:id="@+id/nav_videos"
+        android:title="Videos"
+        android:icon="@drawable/nav_history_icon"/>
+
+
+</menu>

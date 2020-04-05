@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BeforeLogin"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <Button
+        android:id="@+id/btn_skip_before_login"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="17dp"
+        android:text="SKIP"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:background="@drawable/btn_before_login_bckgd"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_skip_before_login"
+        android:layout_marginTop="13dp"
+        android:text="zomato clone"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="45sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_term_and_condition"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_before_login_bckgd"
+            android:drawableStart="@drawable/facebook_logo"
+            android:drawablePadding="10dp"
+            android:elevation="0dp"
+            android:text="Continue With Facebook"
+            android:textSize="16sp"
+            android:textStyle="italic|bold"
+            android:typeface="sans"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_login_with_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_before_login_bckgd"
+            android:drawableStart="@drawable/google_logo"
+            android:drawablePadding="20dp"
+            android:elevation="0dp"
+            android:text="Continue With Google       "
+            android:textSize="16sp"
+            android:textStyle="italic|bold"
+            android:typeface="sans"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btn_continue_with_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_before_login_bckgd"
+            android:drawableStart="@drawable/email_icon"
+            android:drawablePadding="20dp"
+            android:elevation="0dp"
+            android:text="Continue With Email           "
+            android:textSize="16sp"
+            android:textStyle="italic|bold"
+            android:typeface="sans"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_term_and_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        android:text="By continuing you agree to our\nTerms of Service, Privacy Policy Content Policy" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="106dp"
+        app:srcCompat="@drawable/zomato_food" />
+
+
+</RelativeLayout>
