@@ -8,9 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jayantx.zomatoclone.Location.SearchLocation
+import com.jayantx.zomatoclone.MainActivity
 import com.jayantx.zomatoclone.R
 import com.jayantx.zomatoclone.RestaurantNames
 import com.jayantx.zomatoclone.deliveryfragmentRV.SmallCardDataClass
@@ -19,6 +21,7 @@ import com.jayantx.zomatoclone.deliveryfragmentRV.TopCardsAdapter
 import com.jayantx.zomatoclone.deliveryfragmentRV.TopSmallCardAdapter
 import com.xwray.groupie.GroupAdapter
 import com.xwray.groupie.GroupieViewHolder
+import kotlinx.android.synthetic.main.drawer_content_main.*
 import kotlinx.android.synthetic.main.fragment_delivery.*
 
 import kotlinx.android.synthetic.main.fragment_delivery.view.*
@@ -31,6 +34,10 @@ class DeliveryFragment : Fragment() {
     val listOfSmallCardItems = ArrayList<SmallCardDataClass>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+
+
+
 
         val myDeliveryView =  inflater.inflate(R.layout.fragment_delivery, container, false)
 

@@ -7,54 +7,66 @@
     tools:context=".fragments.DeliveryFragment"
     android:orientation="vertical">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp">
+<!--    <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
 
-            <com.google.android.material.appbar.CollapsingToolbarLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:expandedTitleGravity="top"
-                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
 
-                <androidx.appcompat.widget.Toolbar
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    app:layout_collapseMode="pin"
-                    android:background="@color/white"
-                    >
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp">-->
 
-                        <ImageView
-                            android:id="@+id/pointer"
-                            android:layout_width="30dp"
-                            android:layout_height="35dp"
-                            android:padding="3dp"
-                            android:src="@drawable/location_pointer"/>
+<!--            <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:expandedTitleGravity="top"-->
+<!--                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">-->
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="30dp"
-                            android:layout_toEndOf="@+id/pointer"
-                            android:padding="5dp"
-                            android:text="Your Location"
+<!--                <androidx.appcompat.widget.Toolbar-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    app:layout_collapseMode="pin"-->
+<!--                    android:background="@color/white"-->
+<!--                    >-->
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
 
-                            android:gravity="center"
-                            android:layout_marginBottom="1dp"
-                            android:textSize="18sp" />
+<!--                        <ImageView-->
+<!--                            android:id="@+id/pointer"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:padding="3dp"-->
+<!--                            android:src="@drawable/location_pointer"/>-->
 
-                    </RelativeLayout>
-                </androidx.appcompat.widget.Toolbar>
-            </com.google.android.material.appbar.CollapsingToolbarLayout>
-        </com.google.android.material.appbar.AppBarLayout>
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_toEndOf="@+id/pointer"-->
+<!--                            android:padding="5dp"-->
+<!--                            android:text="Your Location"-->
+
+<!--                            android:gravity="center"-->
+<!--                            android:layout_marginBottom="1dp"-->
+<!--                            android:textSize="18sp" />-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/three"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:padding="3dp"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:layout_marginEnd="10dp"-->
+<!--                            android:src="@drawable/ic_menu_black_24dp"/>-->
+
+
+<!--                    </RelativeLayout>-->
+<!--                </androidx.appcompat.widget.Toolbar>-->
+<!--            </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+<!--    </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
 
     <EditText
         android:id="@+id/search_btn"
@@ -66,6 +78,7 @@
         android:layout_margin="10dp"
         android:background="@drawable/search_background"
         android:padding="10dp"
+
         />
 
     <androidx.core.widget.NestedScrollView
