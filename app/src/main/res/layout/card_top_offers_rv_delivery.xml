@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="330dp"
+    android:id="@+id/cv_top_card_background"
+    android:layout_width="300dp"
     android:layout_height="200dp"
-    android:background="@drawable/card_top_offers_background"
-    android:layout_marginStart="20dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginEnd="20dp"
+    android:layout_marginStart="10dp"
     android:layout_marginTop="10dp"
-    >
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/card_top_offers_background">
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_top_card_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="52dp"
         android:text="HYGIENE\nFIRST"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_top_card_des"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:text="BEST IN CLASS HYGIENIC\nOUTLETS"
         android:textColor="@color/white"
-        android:layout_marginStart="30dp"
-        android:textSize="18sp"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_top_card_title" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,8 +44,8 @@
         android:layout_marginBottom="15dp"
         android:text="order now"
         android:textColor="@color/white"
-        android:textSize="15sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_top_card_des" />
 </androidx.constraintlayout.widget.ConstraintLayout>

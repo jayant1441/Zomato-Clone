@@ -35,9 +35,9 @@
                         <ImageView
                             android:id="@+id/pointer"
                             android:layout_width="30dp"
-                            android:layout_height="30dp"
+                            android:layout_height="35dp"
                             android:padding="3dp"
-                            android:src="@drawable/pointer"/>
+                            android:src="@drawable/location_pointer"/>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -45,6 +45,8 @@
                             android:layout_toEndOf="@+id/pointer"
                             android:padding="5dp"
                             android:text="Your Location"
+
+                            android:gravity="center"
                             android:layout_marginBottom="1dp"
                             android:textSize="18sp" />
 
@@ -54,21 +56,51 @@
         </com.google.android.material.appbar.AppBarLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-    <Button
+    <EditText
         android:id="@+id/search_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search"/>
+        android:hint="Search for restaurants"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_background"
+        android:padding="10dp"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_top_offers_delivery_fragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_top_small_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_top_small_cards"
+        android:id="@+id/rv_restaurant_names"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:nestedScrollingEnabled="true"
+        />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

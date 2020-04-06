@@ -18,21 +18,18 @@
         android:textColor="@color/black"
         android:textSize="20sp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/outlinedTextField"
+    <EditText
+        android:id="@+id/search_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:hint="Search for your Location"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/ic_search_black_24dp">
+        android:hint="Search for restaurants"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:drawablePadding="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/search_background"
+        android:padding="10dp"
+        />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView7"
@@ -42,6 +39,7 @@
         android:textColor="@color/colorAccent"
         android:drawablePadding="10dp"
         android:textSize="17sp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
@@ -55,7 +53,7 @@
         android:layout_marginEnd="10dp"/>
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv_add_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Add address"
@@ -77,6 +75,26 @@
 
     <TextView
         android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Recent locations"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/latTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Recent locations"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/lonTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"

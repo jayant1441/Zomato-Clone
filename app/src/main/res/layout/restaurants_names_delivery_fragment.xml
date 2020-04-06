@@ -10,12 +10,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         app:srcCompat="@color/black"
+        android:contentDescription="FoodImage"
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="31dp"
         android:layout_marginStart="7dp"
+        android:layout_marginEnd="3dp"
         android:background="@drawable/restaurant_pic_background"
         />
 

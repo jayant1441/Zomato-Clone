@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.MapsFragmentActivity"
+    tools:context=".Location.MapsFragmentActivity"
     android:orientation="vertical">
 
 
@@ -12,7 +12,7 @@
         android:id="@+id/google_map_fragment"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="470dp"
+        android:layout_height="420dp"
         tools:layout_editor_absoluteX="157dp"
         tools:layout_editor_absoluteY="172dp" />
 
@@ -52,7 +52,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="10dp"
-        android:text="THis is your location"
+        android:text="This is your location"
         android:textColor="@color/black"
         android:textSize="20sp"/>
 
