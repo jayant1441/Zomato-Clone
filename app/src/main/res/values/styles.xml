@@ -8,12 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-<!--    <style name="MainActivityTheme" parent="AppTheme">-->
-<!--     -->
-<!--        <item name="colorPrimary">@color/white</item>-->
-<!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
-<!--        <item name="colorAccent">@color/colorAccent</item>-->
-<!--    </style>-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
 
 
 

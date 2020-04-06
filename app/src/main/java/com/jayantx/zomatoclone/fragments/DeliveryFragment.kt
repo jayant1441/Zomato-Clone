@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.jayantx.zomatoclone.Location.SearchLocation
@@ -39,7 +40,7 @@ class DeliveryFragment : Fragment() {
 
 
 
-        val search_btn = myDeliveryView.search_btn as Button
+        val search_btn = myDeliveryView.search_btn as EditText
 
         search_btn.setOnClickListener {
             startActivity(Intent(context, SearchLocation::class.java))
