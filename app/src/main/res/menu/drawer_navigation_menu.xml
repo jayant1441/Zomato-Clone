@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Food Orders">
+        <menu>
+            <item android:id="@+id/your_orders_nav" android:title="Your Orders" android:icon="@drawable/takeaway" android:iconTint="@color/black" />
+            <item android:id="@+id/favourite_orders_nav" android:title="Favourite Orders" android:icon="@drawable/nav_favourite_icon" android:iconTint="@color/black"/>
+            <item android:id="@+id/address_book_nav" android:title="Address Book" android:icon="@drawable/address_book_icon" android:iconTint="@color/black"/>
+            <item android:id="@+id/online_ordering_nav" android:title="Online Ordering Help" android:icon="@drawable/ordering_help_icon" android:iconTint="@color/black"/>
+        </menu>
+    </item>
+
+    <item android:title="About">
+        <menu>
+            <item android:id="@+id/send_feed_back_nav" android:title="Send Feedback" android:icon="@drawable/feedback_icon" android:iconTint="@color/black"/>
+            <item android:id="@+id/developer_nav" android:title="Developer" android:icon="@drawable/developer_icon" android:iconTint="@color/black"/>
+            <item android:id="@+id/log_out_nav" android:title="Log Out" android:icon="@drawable/log_out_icon" android:iconTint="@color/black"/>
+        </menu>
+    </item>
+
+
+</menu>
